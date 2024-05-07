@@ -1,0 +1,20 @@
+[
+  {
+    "url": "/audio/Doul - BE ME.flac",
+    "title": "BE ME",
+    "author": "Doul",
+    "image": "/images/titles/Be_Me.jpg"
+  },
+  {
+    "url": "/audio/Poems of a Machine.flac",
+    "title": "Poems of a Machine",
+    "author": "Mili",
+    "image": "/images/titles/To_kill_a_living_book.jpeg"
+  },
+  {
+    "url": "/audio/Casey_Edwards_Bury_The_Light_Ft_Victor_Borba.mp3",
+    "title": "Bury The Light Ft Victor Borba",
+    "author": "Victor Borba",
+    "image": "/images/titles/Burry_The_Light.png"
+  }
+]
