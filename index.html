@@ -56,11 +56,7 @@
         <div class="music_workspace">
                 <span class="music_workspace_name">Lorem ipslum</span>
                 <div class="music_workspace_music">
-                    <div class="music_workspace_music_container">
-                        <img alt="image" src="/images/lorem.png" class="music_workspace_music_image">
-                        <span class="music_workspace_music_name music_workspace_music_text">Lorem ipslum</span>
-                        <span class="music_workspace_music_author music_workspace_music_text">By Lorem ipslum</span>
-                    </div>
+
                 </div>
                 <span class="music_workspace_name">Lorem ipslum</span>
                 <div class="music_workspace_music">
@@ -72,60 +68,80 @@
                 </div>
                 <span class="music_workspace_name">Lorem ipslum</span>
                 <div class="music_workspace_music">
-                    <div class="music_workspace_music_container">
-                        <img alt="image" src="/images/lorem.png" class="music_workspace_music_image">
-                        <span class="music_workspace_music_name music_workspace_music_text">Lorem ipslum</span>
-                        <span class="music_workspace_music_author music_workspace_music_text">By Lorem ipslum</span>
-                    </div>
+
                 </div>
             </div>
         </div>
-    <div class="music_player_sub_menu">
+    <div class="music_player_sub_menu hide" id="music_menu"> <!-- Міні-Плеєр, з'являється коли користувач запускає трек -->
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
         <div class="music_player_sub_menu_controls">
-            <button type="button" class="music_player_sub_menu_control_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_control_button_image">
+            <button type="button" id="previous-song" class="music_player_sub_menu_control_button button">
+                <img src="/images/info-panel/previous_song_icon.png" alt="image" class="music_player_sub_menu_control_button_image">
             </button>
-            <button type="button" class="music_player_sub_menu_control_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_control_button_image">
+            <button type="button" id="stop_button" class="music_player_sub_menu_control_button button">
+                <img src="/images/info-panel/play_icon.png" alt="image" class="music_player_sub_menu_control_button_image">
             </button>
-            <button type="button" class="music_player_sub_menu_control_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_control_button_image">
+            <button type="button"  id="next-song" class="music_player_sub_menu_control_button button">
+                <img src="/images/info-panel/next_song_icon.png" alt="image" id="play_button_image"  class="music_player_sub_menu_control_button_image">
             </button>
-            <span class="music_player_sub_menu_control_time">0:00</span>
+            <span id="music_timer" class="music_player_sub_menu_control_time">0:00</span>
+            <span class="music_player_sub_menu_control_time">:</span>
+            <span id="music_timer_duration" class="music_player_sub_menu_control_time">0:00</span>
         </div>
         <div class="music_player_sub_menu_music_info">
-            <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_info_image">
+            <img src="/images/lorem.png" alt="image" class="music_player_sub_menu_music_info_image">
             <div class="music_player_sub_menu_music_info_description">
                     <span class="music_player_sub_menu_music_info_description_name music_player_sub_menu_music_info_description_info">lorem ipslum</span>
                     <span class="music_player_sub_menu_music_info_description_author music_player_sub_menu_music_info_description_info">lorem ipslum lorem ipslum</span>
             </div>
             <div class="music_player_sub_menu_music_user_menu">
-                <button type="button" class="music_player_sub_menu_music_user_menu_reaction_button button">
-                    <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_user_menu_reaction_img">
+                <button type="button" id="like_btn" class="music_player_sub_menu_music_user_menu_reaction_button button">
+                    <img src="/images/info-panel/like_button_inactive.png" alt="image" id="like_picture" class="music_player_sub_menu_music_user_menu_reaction_img">
                 </button>
-                <button type="button" class="music_player_sub_menu_music_user_menu_reaction_button button">
-                    <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_user_menu_reaction_img">
+                <button type="button" id="dislike_btn" class="music_player_sub_menu_music_user_menu_reaction_button button">
+                    <img src="/images/info-panel/dislike_button_inactive.png" alt="image" id="dislike_picture" class="music_player_sub_menu_music_user_menu_reaction_img">
                 </button>
                 <button type="button" class="music_player_sub_menu_music_user_menu_sub_menu button">
-                    <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_user_menu_reaction_img">
+                    <img src="/images/info-panel/user_submenu_icon.png" alt="image" class="music_player_sub_menu_music_user_menu_reaction_img">
                 </button>
             </div>
         </div>
         <div class="music_player_sub_menu_music_redaction_menu">
-            <button type="button" class="music_player_sub_menu_music_redaction_menu_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_redaction_menu_button_image">
+                <input type="range" id="volumeSlider" class="volume-slider hide" min="0" max="1" step="0.01" value="1">
+                <button type="button" id="sound_btn_replace" class="music_player_sub_menu_music_redaction_menu_button button">
+                    <img src="/images/info-panel/sound_icon.png" alt="image" id="sound" class="music_player_sub_menu_music_redaction_menu_button_image">
+                </button>
+
+            <button type="button"  class="music_player_sub_menu_music_redaction_menu_button button">
+                <img src="/images/info-panel/mix_songs_icon.png" alt="image" id="random_button" class="music_player_sub_menu_music_redaction_menu_button_image">
             </button>
-            <button type="button" class="music_player_sub_menu_music_redaction_menu_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_redaction_menu_button_image">
+            <button type="button" id="repeat_button" class="music_player_sub_menu_music_redaction_menu_button button">
+                <img src="/images/info-panel/replay_song_icon.png" alt="image" id="repeat_image" class="music_player_sub_menu_music_redaction_menu_button_image">
             </button>
-            <button type="button" class="music_player_sub_menu_music_redaction_menu_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_redaction_menu_button_image">
-            </button>
-            <button type="button" class="music_player_sub_menu_music_redaction_menu_button button">
-                <img src="/images/info-panel/music_player_template_buttons.png" alt="image" class="music_player_sub_menu_music_redaction_menu_button_image">
+            <button type="button" id="opened_button" class="music_player_sub_menu_music_redaction_menu_button button">
+                <img src="/images/info-panel/close_player_icon.png" alt="image" class="music_player_sub_menu_music_redaction_menu_button_image opened_button_anim">
             </button>
         </div>
     </div>
 </div>
+<div class="music_player hide" id="music_player"><!--Ця менюшка з'являється коли відкривається пісня, її можна звернути і розвернути натисканням на панель знизу-->
+    <div class="music_player_song" id="player_song">
+        <img src="/images/lorem.png" class="music_player_song_img" alt="" id="player_song_img"> <!--Тут на скрипті впихнути картинку\відео теперішньої пісні-->
+    </div>
+    <div class="music_player_music-menu">
+        <div class="music_player_music-menu_btns">
+            <a href="#"button class="music_player_music-menu_next"><h3>Далі</h3></a>
+            <a href="#"button class="music_player_music-menu_text"><h3>Текст</h3></a>
+            <a href="#"button class="music_player_music-menu_same"><h3>Схожі</h3></a>
+        </div>
+        <div class="music_player_music-menu_next_song_container">
+
+        </div>
+    </div>
+</div>
+<script src="script/index.js"></script>
+<script src="script/audio.js"></script>
 </body>
 </html>
