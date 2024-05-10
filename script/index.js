@@ -24,19 +24,17 @@ likeButton.addEventListener("click", (event) => {
     } else {
         likeImage.src = likeImage.src.replace("/images/info-panel/like_button_active.png", "/images/info-panel/like_button_inactive.png");
     }
-    dislikeImage.src = "/images/info-panel/like_button_inactive.png";
+    dislikeImage.src = "/images/info-panel/dislike_button_inactive.png";
 });
 
 dislikeButton.addEventListener("click", (event) => {
-    if (dislikeImage.src.includes("/images/info-panel/dislike_button_active.png")) {
-        return;
-    }
     if (dislikeImage.src.includes("/images/info-panel/dislike_button_inactive.png")) {
         dislikeImage.src = dislikeImage.src.replace("/images/info-panel/dislike_button_inactive.png", "/images/info-panel/dislike_button_active.png");
     } else {
         dislikeImage.src = dislikeImage.src.replace("/images/info-panel/dislike_button_active.png", "/images/info-panel/dislike_button_inactive.png");
+
     }
-    likeImage.src = "/images/info-panel/dislike_button_inactive.png";
+    likeImage.src = "/images/info-panel/like_button_inactive.png";
 });
 
 openedButton.addEventListener("click", () => {
