@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/sign_in.css">
+</head>
+<body>
+   <div class="sigh_in_form_container">
+        <h2 class="sign_in_form_heading">SignIn</h2>
+    <div class="sign_in_form_inputs">
+        <div class="sign_in_forms">
+            <label for="sign-in-email" class="sign_in_forms_login_text">Email</label>
+            <input type="email" id="sign-in-email" required = "true" placeholder="Enter email" class="sign_in_forms_input">
+        </div>
+        <div class="sign_in_forms">
+            <div class="hide_password_container">
+                <label for="sign-in-password" class="sign_in_forms_login_text">Password</label>
+                <div class="hide_password_container_button">
+                    <img src="/images/forms/eye_unchecked.png" alt="" class="hide_password_img" id="hide_pass_img">
+                    <span class="sign_in_forms_login_text">Hide</span>
+                </div>
+            </div>
+            <input type="password" id="sign-in-password" required = "true" placeholder="Enter your password" class="sign_in_forms_input">
+        </div>
+        <div class="sign_in_buttons">   
+            <button type="submit" class="sign_in_button button"><span class="sign_in_button_text">Sign In</span></button>
+        </div>
+    </div>
+    <div class="dividers">
+        <div class="divider1"></div>
+        <div class="divider2"></div>
+    </div>
+        <button type="submit" class="sign_up_button button"><span class="sign_up_button_text">Sign In</span></button>
+   </div>
+</body>
+</html>

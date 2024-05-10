@@ -94,6 +94,7 @@ body{
   margin-top: 70px;
 }
 .interactive_menu_buttons_container{
+  z-index: 9999;
   width: 211px;
   height: 100%;
   display: flex;
@@ -286,7 +287,7 @@ body{
 }
 .music_player_sub_menu{
   display: flex;
-  z-index: 9999;
+  z-index: 99999;
   position: fixed;
   width: 100%;
   height: 70px;
@@ -348,7 +349,7 @@ body{
 }
 .music_player_sub_menu_music_info_description_info{
   width: auto;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   margin-left: 20px;
 }
@@ -444,7 +445,7 @@ border-radius: 50%;
 }
 .music_player_song{
   width: 100%;
-  margin: 120px 200px 100px 100px;
+  margin: 120px 200px 100px 300px;
 }
 .music_player_song_img{
   width: 100%;
