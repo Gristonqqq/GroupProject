@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="/css/sign_in.css">
 </head>
 <body>
+<form action="/form/sign_in.php" method="post">
    <div class="sigh_in_form_container">
         <h2 class="sign_in_form_heading">SignIn</h2>
     <div class="sign_in_form_inputs">
         <div class="sign_in_forms">
             <label for="sign-in-email" class="sign_in_forms_login_text">Email</label>
-            <input type="email" id="sign-in-email" required = "true" placeholder="Enter email" class="sign_in_forms_input">
+            <input type="email" id="sign-in-email" required = "true" placeholder="Enter email" class="sign_in_forms_input" name="email">
         </div>
         <div class="sign_in_forms">
             <div class="hide_password_container">
@@ -25,17 +26,18 @@
                     <span class="sign_in_forms_login_text">Hide</span>
                 </div>
             </div>
-            <input type="password" id="sign-in-password" required = "true" placeholder="Enter your password" class="sign_in_forms_input">
+            <input type="password" id="sign-in-password" required = "true" placeholder="Enter your password" class="sign_in_forms_input" name="pass">
         </div>
         <div class="sign_in_buttons">   
-            <button type="submit" class="sign_in_button button"><span class="sign_in_button_text">Sign In</span></button>
+            <button type="submit" class="sign_in_button button"><span class="sign_in_button_text" name = "sign_in">Sign In</span></button>
         </div>
     </div>
     <div class="dividers">
         <div class="divider1"></div>
         <div class="divider2"></div>
     </div>
-        <button type="submit" class="sign_up_button button"><span class="sign_up_button_text">Sign In</span></button>
+        <button type="submit" class="sign_up_button button"><span class="sign_up_button_text">Sign Up</span></button>
    </div>
+</form>
 </body>
 </html>
