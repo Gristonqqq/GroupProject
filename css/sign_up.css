@@ -79,7 +79,7 @@
     justify-content: flex-end;
 
 }
-.button{
+.sighbutton{
     width: 100%;
     height: 50px;
     align-self: center;
@@ -101,5 +101,6 @@
 .center{
     margin-left: 15%;
 }
+
 
 

@@ -18,11 +18,12 @@ $email = $conn->real_escape_string($email);
 $name = $conn->real_escape_string($name);
 $pass = password_hash($pass, PASSWORD_DEFAULT);
 
-$stmt = $conn->prepare("INSERT INTO registration (email, name, password) VALUES (?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO users (email, name, password) VALUES (?, ?, ?)");
 $stmt->bind_param("sss", $email, $name, $pass);
 
 if ($stmt->execute()) {
-    echo 'Registration successful';
+    header("Location: http://localhost:63342/GroupProject/index.html");
+    exit();
 } else {
     echo 'Error: ' . $conn->error;
 }

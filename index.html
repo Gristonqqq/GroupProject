@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memorable Elastic Falcon</title>
     <meta property="og:title" content="Memorable Elastic Falcon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
+
 </head>
 <body>
+<div class="form_container hide" id="form_container"> <!--Місце де вставляються форми-->
+
+</div>
 <div class="container">
     <div class="header_container">
         <button type="button" class="header_interactive_menu_button button">
@@ -15,8 +22,8 @@
         </button>
         <input type="text" placeholder="Find a composition" class="header_input input">
         <div class="header_user_container">
-            <button type="button" class="header_user_sign_in_button user_entrance_button button">Sing In</button>
-            <button type="button" class="header_user_sign_up_button user_entrance_button button">Sing Up</button>
+            <button type="button" id="open_sign_in_form_btn" class="header_user_sign_in_button user_entrance_button button">Sing In</button>
+            <button type="button" id="open_sign_up_form_btn" class="header_user_sign_up_button user_entrance_button button">Sing Up</button>
         </div>
     </div>
     <div class="interactive_menu_container">
@@ -33,7 +40,7 @@
                     <img alt="image" src="/images/info-panel/favorites_icon.png" class="interctive_menu_button_image">
                     <span class="interactive_menu_button_text">Favorites</span>
                 </button>
-                <button name="Upload_Btn" type="button" class="interactive_menu_button button">
+                <button name="Upload_Btn" type="button" id="upload_music_btn" class="interactive_menu_button button">
                     <img alt="image" src="/images/info-panel/Upload_icon.png" class="interctive_menu_button_image">
                     <span class="interactive_menu_button_text">Upload</span>
                 </button>
@@ -41,7 +48,7 @@
                 <div class="interactive_menu_playlists_topic">
                     <div class="interactive_menu_playlists_header">
                         <span class="interactive_menu_playlists_header_text">Playlists</span>
-                        <button type="button" class="interactive_menu_playlists_header_button button">+</button>
+                        <button type="button" id="create_play_list" class="interactive_menu_playlists_header_button button">+</button>
                     </div>
                     <div class="interactive_menu_playlists_playlist">
                         <img alt="image" src="/images/lorem.png" class="interactive_menu_playlists_playlist_image">
@@ -141,6 +148,7 @@
         </div>
     </div>
 </div>
+
 <script src="script/index.js"></script>
 <script src="script/audio.js"></script>
 </body>
