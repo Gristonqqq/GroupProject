@@ -123,5 +123,7 @@ openCreatePlaylistButton.addEventListener("click", () =>{
         .then(data => {
             formContainer.classList.toggle("hide");
             document.getElementById('form_container').innerHTML = data;
+            document.getElementById('form_container').style.display = 'block'; // Ensure container is visible
         });
 })
+

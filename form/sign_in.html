@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Music</title>
-    <link rel="stylesheet" href="/css/add_music.css">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="/css/sign_in.css">
 </head>
 <body>
-<form action="/form/add_music.php" method="post" enctype="multipart/form-data">
-    <div class="add_music_form_container form_normalizer">
-        <h2 class="add_music_form_heading">Add Music</h2>
-        <div class="add_music_form_inputs">
-            <div class="add_music_forms">
-                <label for="music-title" class="add_music_forms_label">Title</label>
-                <input type="text" id="music-title" required="true" placeholder="Enter title" class="add_music_forms_input" name="title">
-            </div>
-            <div class="add_music_forms">
-                <label for="music-artist" class="add_music_forms_label">Artist</label>
-                <input type="text" id="music-artist" required="true" placeholder="Enter artist" class="add_music_forms_input" name="artist">
-            </div>
-            <div class="add_music_forms">
-                <label for="music-genre" class="add_music_forms_label">Genre</label>
-                <select id="music-genre" required="true" class="add_music_forms_input" name="genre">
-                    <option value="">Select genre</option>
-                    <option value="rock">Rock</option>
-                    <option value="pop">Pop</option>
-                    <option value="jazz">Jazz</option>
-                    <option value="hip-hop">Hip Hop</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <div class="add_music_forms">
-                <label for="music-cover" class="add_music_forms_label">Cover Image</label>
-                <input type="file" id="music-cover" accept="image/*" required="true" class="add_music_forms_input" name="cover">
-            </div>
-            <div class="add_music_forms">
-                <label for="music-file" class="add_music_forms_label">Music File</label>
-                <input type="file" id="music-file" accept="audio/*" required="true" class="add_music_forms_input" name="music">
-            </div>
+<form action="/form/sign_in.php" method="post">
+   <div class="sigh_in_form_container form_normalizer">
+        <h2 class="sign_in_form_heading">SignIn</h2>
+    <div class="sign_in_form_inputs">
+        <div class="sign_in_forms">
+            <label for="sign-in-email" class="sign_in_forms_login_text">Email</label>
+            <input type="email" id="sign-in-email" required = "true" placeholder="Enter email" class="sign_in_forms_input" name="email">
         </div>
-        <div class="add_music_buttons">
-            <button type="submit" class="add_music_button addButton"><span class="add_music_button_text">Add Music</span></button>
+        <div class="sign_in_forms">
+            <div class="hide_password_container">
+                <label for="sign-in-password" class="sign_in_forms_login_text">Password</label>
+                <div class="hide_password_container_button">
+                    <img src="/images/forms/eye_unchecked.png" alt="" class="hide_password_img" id="hide_pass_img">
+                    <span class="sign_in_forms_login_text">Hide</span>
+                </div>
+            </div>
+            <input type="password" id="sign-in-password" required = "true" placeholder="Enter your password" class="sign_in_forms_input" name="pass">
+        </div>
+        <div class="sign_in_buttons">
+            <button type="submit" class="sign_in_button signButton"><span class="sign_in_button_text" name = "sign_in">Sign In</span></button>
         </div>
     </div>
+    <div class="dividers">
+        <div class="divider1"></div>
+        <div class="divider2"></div>
+    </div>
+        <button type="submit" class="sign_up_button signButton"><span class="sign_up_button_text">Sign Up</span></button>
+   </div>
 </form>
 </body>
 </html>
