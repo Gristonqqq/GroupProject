@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "musicsiteproject",
+  "private_key_id": "a4a256ea7f3abbf355fc2eb86583735b45e41612",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChrK0f8ruWuwGV\n6YZURkt3p5Ud6SAwOQwzkRV8wLn/z5n8YYNMz/yq8igF7u/QPYo1fNHwyG6oLa+l\nc4ud+FAHB7zhwws9F1TWylX9duQxiSMpR+IgxnXs/x8HATiWKK7OUC6jP1QPT2yT\nGW1mIabP4Mg6C3auEaVGehnnhNv5/n4wT5IjMQ6T/maQahHGfqpwVH/djspCECLc\nTd7zAVCiVd4D0rz6FCfz0kEEAItbIZKprlvUqN68ebsQ5TC3Z/F+Jt7tZBGXy8k7\n7cFgzf9cCnRX6FHocXA/UUNNatgFevna5Ka9z7EC/wtp0tj/7JPZH48hdEaiagyG\nYkMi1dMZAgMBAAECggEABUA/CqAldknb5vmD2e9cvdKYN4Jt/8FbYD5iINN/bWuz\nXOM+5dFruHkI3z52LmcdR5gmlzsvSuONYAjx1ZJ7AoULRH4QLdUFtdWYnhTMzwx2\njNcimBcFPZdApvqj0s6x9MEqbpw2ZJC03k2cXcDFWSmVrAe//Eg8iOtoAkeKP6/2\ncnfkTyiTL08y7xcHAWeOgbEtx7wReL2DSsY31aqZ7rQpcKAKkvJIi6znny80aS/d\nNdIwP0U03hEO40Cc1L5/HBm2YgLbRPxo5t+RwPblzccAftfi9gedNYg4cue5IGTc\ns9PXf7+8Mzk4fH1E4KX8WNxEkPJS9muEIH0zqURifQKBgQDWyk2jrv1k8zEKMUVW\n8HVMCWgPwCe7ij3mXFLKM5kRw8f7WZshQTUJAd4ODh/720A3lvwBRTqyCICe942d\neyL4+VbXGYx0kAM5NBoN0wFLlLCp8i1t7dEr4wB+1oTImlaM6aPawETaju4zQYWY\nzUv2/FUL+VMw+YwcUxrfOOT81QKBgQDAsYa0s0wUAi++AgX4rlDqdMrcqyut+mX7\n1RzJGZTB7TW0Vq4fQzeFIZYvQeiSMc9sg5BdBMuKm1a6Jm1pfroknbStYDjm4HtY\nTj+RZ8CL/Ac18W5yVZCfDOdlPOPU2FrB/5PytltLk7NC6Fd6STHESY4dn5UNtFry\nay0/6KkPNQKBgHGgiD4lXqu+85x+wD3j60mUWFaswtg1o9Vv1eReM4XwWqUfnC+V\nfWcMc9pfoo/sRyahWyOY6how4Uo3j9VVxQSNc2FLhMBNR0dFxtq1W6QOPv9IvLvA\n6b0b07FF7uzoqQzWtPYObN5qapz29qQFR0Cb8Knq9hWcjoCVfkvEn28ZAoGAEIeq\nHJo87oJ5gf0+ceTSQCqgtGlip9wRH5dajs3I+xHUR5IgAcKMYrlM3uTyhIgNWSu4\nGKKuq0dEG1fsjt42Lanxs+XLO9MKAbtErL6Pv/Jw0+nQJbK9Y0eCGictDDc7IeVA\n1dNa5ZLYD+dKicz5nfMJY/UqnjBYlO8oxJC63/kCgYA00Op4wMBOdY0rt6wVBKno\nhLzUpfwJaCoKI0boHPbBC9v+lCGEhIpQixaiBJr3oEm6FbZrN8v8jnZv1jf8A1OY\nj9DQI8TW9JyZHyAwhhxb0SflkbL1pVNZhZWXgORIHgJ0KfdbXpJ7UIa9n/rIWdft\nCHFeyfd3QX8YJ7SA6zZEwA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "music-site-server@musicsiteproject.iam.gserviceaccount.com",
+  "client_id": "108595482275211984868",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/music-site-server%40musicsiteproject.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

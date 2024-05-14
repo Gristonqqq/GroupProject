@@ -178,66 +178,30 @@ playerSongImg.addEventListener('click', () => {
 
 repeatButton.addEventListener('click', toggleRepeat);
 
-fetch('audio/audioFiles.json')
-    .then((response) => response.json())
-    .then((data) => {
-        audioFiles = data;
-        const playAudioFromList = (song) => {
-            player.classList.remove("hide");
-            updateSongInfo(song);
-            playAudio(song);
-        };
+function displayMusicContainer(title, artist, genre, musicFileId, coverFileId) {
+    var musicContainer = document.createElement('div');
+    musicContainer.classList.add('music-container');
 
-        audioFiles.forEach((file) => {
-            const songContainer = document.createElement('div');
-            songContainer.classList.add('music_workspace_music_container');
+    var titleElement = document.createElement('h2');
+    titleElement.textContent = title;
+    musicContainer.appendChild(titleElement);
 
-            const playBtn = document.createElement('button');
-            playBtn.classList.add('music_workspace_music_image','player_button_normalize');
-            playBtn.innerHTML = `<img src="${file.image}" class="music_workspace_music_image" alt="Baka">`;
+    var artistElement = document.createElement('p');
+    artistElement.textContent = 'Artist: ' + artist;
+    musicContainer.appendChild(artistElement);
 
-            const nameBtn = document.createElement('span');
-            nameBtn.classList.add('music_workspace_music_name', 'music_workspace_music_text');
-            nameBtn.textContent = file.title;
+    var genreElement = document.createElement('p');
+    genreElement.textContent = 'Genre: ' + genre;
+    musicContainer.appendChild(genreElement);
 
-            const autorBtn = document.createElement('span');
-            autorBtn.classList.add('music_workspace_music_author', 'music_workspace_music_text');
-            autorBtn.textContent = file.author;
+    var audioElement = document.createElement('audio');
+    audioElement.controls = true;
+    audioElement.src = 'https://drive.google.com/uc?id=' + musicFileId;
+    musicContainer.appendChild(audioElement);
 
-            songContainer.append(playBtn, nameBtn, autorBtn);
-            songList.appendChild(songContainer);
+    var coverImage = document.createElement('img');
+    coverImage.src = 'https://drive.google.com/uc?id=' + coverFileId;
+    musicContainer.appendChild(coverImage);
 
-            nameBtn.addEventListener('click', () => playAudioFromList(file));
-            playBtn.addEventListener('click', () => playAudioFromList(file));
-
-            const playerSongContainer = document.createElement('div');
-            playerSongContainer.classList.add('next_song_container');
-
-            const playerPlayBtn = document.createElement('button');
-            playerPlayBtn.classList.add('music_player_music-menu_next_song-img', 'player_button_normalize');
-            playerPlayBtn.innerHTML = `<img src="${file.image}" alt="Baka" class="music_workspace_music_image_player">`;
-
-            const playerPlayInfo = document.createElement("div");
-            playerPlayInfo.classList.add('music_player_music-menu_information_text');
-
-            const playerNameBtn = document.createElement('button');
-            playerNameBtn.classList.add('music_player_music-menu_information_text_name', 'player_button_normalize');
-            playerNameBtn.textContent = file.title;
-
-            const playerAutorBtn = document.createElement('p');
-            playerAutorBtn.textContent = file.author;
-
-
-            playerPlayInfo.append(playerNameBtn,playerAutorBtn);
-
-            playerSongContainer.append(playerPlayBtn, playerPlayInfo);
-            playerSongList.appendChild(playerSongContainer);
-            playerNameBtn.addEventListener('click', () => playAudioFromList(file));
-            playerPlayBtn.addEventListener('click', () => playAudioFromList(file));
-
-        });
-
-        previousBtn.addEventListener('click', playPreviousAudio);
-        nextBtn.addEventListener('click', playNextAudio);
-
-    });
+    document.body.appendChild(musicContainer);
+}
