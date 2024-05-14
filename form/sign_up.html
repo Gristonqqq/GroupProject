@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,32 +10,34 @@
     <link rel="stylesheet" href="/css/sign_up.css">
 </head>
 <body>
+<form action="/form/sign_up.php" method="post">
 <div class="sigh_up_form_container">
     <h2 class="sign_up_form_heading">SignUp</h2>
     <div class="sign_up_form_inputs">
         <div class="sign_up_forms">
             <label for="sign-up-email" class="sign_up_forms_login_text">Email</label>
-            <input type="email" id="sign-up-email" required = "true" placeholder="Enter email" class="sign_up_forms_input">
+            <input type="email" id="sign-up-email" required = "true" placeholder="Enter email" class="sign_up_forms_input" name="email">
         </div>
             <div class="sign_up_forms">
                 <label for="sign-up-name" class="sign_up_forms_login_text">Name</label>
-                <input type="password" id="sign-up-name" required = "true" placeholder="Enter your password" class="sign_up_forms_input">
+                <input type="text" id="sign-up-name" required = "true" placeholder="Enter your name" class="sign_up_forms_input" name="name">
             </div>
         <div class="sign_up_forms">
             <div class="hide_password_container">
                 <label for="sign-up-password" class="sign_up_forms_login_text">Password</label>
                 <div class="hide_password_container_button">
-                    <img src="/images/forms/eye_unchecked.png" alt="" class="hide_password_img" id="hide_pass_img">
+                    <img src="/images/forms/eye_unchecked.png" alt="" class="hide_password_img" id="hide_pass_img" >
                     <span class="sign_up_forms_login_text">Hide</span>
                 </div>
             </div>
-            <input type="password" id="sign-up-password" required = "true" placeholder="Enter your password" class="sign_up_forms_input">
+            <input type="password" id="sign-up-password" required = "true" placeholder="Enter your password" class="sign_up_forms_input" name="pass">
         </div>
+    </div>
         <div class="sign_up_buttons">
-            <button type="submit" class="sign_up_button button"><span class="sign_up_button_text">Create an account</span></button>
+            <button type="submit" class="sign_up_button sighbutton"><span class="sign_up_button_text">Create an account</span></button>
         </div>
         <span class="sign_up_forms_login_text center" id="sign_up_sign_in">Already have an account? SignIn</span>
 </div>
-</div>
+</form>
 </body>
 </html>

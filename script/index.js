@@ -12,6 +12,11 @@ const repeatButton = document.getElementById("repeat_button");
 const repeatImg = document.getElementById("repeat_image");
 const openedButton = document.querySelector('#opened_button');
 const openedButtonAnimation = document.querySelector('.opened_button_anim');
+const formContainer = document.getElementById("form_container");
+const openSignInFormButton = document.getElementById("open_sign_in_form_btn");
+const openSignUpFormButton = document.getElementById("open_sign_up_form_btn");
+const openUploadMusicButton = document.getElementById("upload_music_btn");
+const openCreatePlaylistButton = document.getElementById("create_play_list");
 
 let inputChanged = false;
 
@@ -88,3 +93,35 @@ repeatButton.addEventListener("click", () => {
        repeatImg.src = repeatImg.src.replace("/images/info-panel/replay_song_icon_clicked.png", "/images/info-panel/replay_song_icon.png");
    }
 });
+openSignInFormButton.addEventListener("click", () => {
+    fetch('sign_in.html')
+        .then(response => response.text())
+        .then(data => {
+            formContainer.classList.toggle("hide");
+            document.getElementById('form_container').innerHTML = data;
+        });
+})
+openSignUpFormButton.addEventListener("click", () =>{
+    fetch('sign_up.html')
+        .then(response => response.text())
+        .then(data => {
+            formContainer.classList.toggle("hide");
+            document.getElementById('form_container').innerHTML = data;
+        });
+})
+openUploadMusicButton.addEventListener("click", () =>{
+    fetch('add_music.html')
+        .then(response => response.text())
+        .then(data => {
+            formContainer.classList.toggle("hide");
+            document.getElementById('form_container').innerHTML = data;
+        });
+})
+openCreatePlaylistButton.addEventListener("click", () =>{
+    fetch('create_playlist.html')
+        .then(response => response.text())
+        .then(data => {
+            formContainer.classList.toggle("hide");
+            document.getElementById('form_container').innerHTML = data;
+        });
+})

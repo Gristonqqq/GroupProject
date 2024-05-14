@@ -1,4 +1,8 @@
-.sigh_up_form_container{
+body{
+    margin: 0;
+    padding: 0;
+}
+.add_music_form_container{
     width: 500px;
     height: 600px;
     display: flex;
@@ -9,14 +13,14 @@
     background: #121212;
     padding: 80px;
 }
-.sign_up_form_heading{
+.add_music_form_heading{
     color: #bfbfbf;
     font-size: 35px;
     font-family: "STIX Two Text", serif;
     font-weight: 600;
     line-height: 1.5;
 }
-.sign_up_form_inputs{
+.add_music_form_inputs{
     gap: 32px;
     width: 100%;
     display: flex;
@@ -25,20 +29,20 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.sign_up_forms{
+.add_music_forms{
     gap: 8px;
     width: 100%;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
 }
-.sign_up_forms_login_text{
+.add_music_forms_label{
     font-size: 22px;
     line-height: 1.5;
     fill: #bfbfbf;
     color: #bfbfbf;
 }
-.sign_up_forms_input{
+.add_music_forms_input{
     width: 100%;
     background: transparent;
     color: #bfbfbf;
@@ -50,27 +54,8 @@
     line-height: 1.5;
     border: 1px solid #191818;
 }
-.hide_password_container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.hide_password_container_button{
-    width: 70px;
-    height: 24px;
-    align-items: center;
-    flex-shrink: 1;
-    justify-content: space-between;
-    display: flex;
-}
-.hide_pass_img{
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-}
-.sign_up_buttons{
+
+.add_music_buttons{
     margin-top: 10px;
     width: 100%;
     display: flex;
@@ -79,8 +64,13 @@
     justify-content: flex-end;
 
 }
-.sighbutton{
-    width: 100%;
+.add_music_button{
+    background: #bfbfbf;
+    color: #191818;
+
+}
+.signbutton{
+    width: 50%;
     height: 50px;
     align-self: center;
     transition: 0.3s;
@@ -89,17 +79,6 @@
     font-weight: 700;
     line-height: 1.5;
     border: none;
-}
-.sign_up_button{
-    background: #bfbfbf;
-    color: #191818;
-
-}
-.sign_up_button:hover{
-    background: #E0D1CB;
-}
-.center{
-    margin-left: 15%;
 }
 
 
